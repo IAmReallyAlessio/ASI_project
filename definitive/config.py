@@ -2,15 +2,15 @@ class RegConfig:
     train_size = 1024
     batch_size = 128
     lr = 1e-3
-    epochs = 100
-    train_samples = 5                   # number of train samples for MC gradients
+    epochs = 50
+    train_samples = 10                   # number of train samples for MC gradients
     test_samples = 10                   # number of test samples for MC averaging
     num_test_points = 400               # number of test points
     experiment = 'regression'
     hidden_units = 400                  # number of hidden units
-    noise_tolerance = .1                # log likelihood sigma
+    noise_tolerance = 1.0                # log likelihood sigma
     mu_init = [-0.2, 0.2]               # range for mean 
-    rho_init = [-5, -4]                 # range for rho_param
+    rho_init = [-4, -3]                 # range for rho_param
     prior_init = [0.5, -0, -6]        # mixture weight, log(stddev_1), log(stddev_2)
    
 
